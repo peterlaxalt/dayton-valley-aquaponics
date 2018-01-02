@@ -1,0 +1,44 @@
+{% assign nav-counter = 0 %}
+<nav>
+  <div class="lmnt-nav-inner">
+
+    <div class="lmnt-nav-left">
+      <div class="lmnt-nav-logo">
+        <img src="{{site.baseurl}}/assets/images/img-brandmark.svg" />
+        <img src="{{site.baseurl}}/assets/images/img-logotype.svg" />
+      </div>
+
+      <ul class="lmnt-nav-list">
+        {% for link in site.data.nav.links %}
+          {% assign nav-counter = nav-counter | plus: 1 %}
+          <a href="{{ link.url }}">
+            <li>
+              <span>
+                0{{ nav-counter }}
+              </span>
+              {{ link.label }}
+            </li>
+          </a>
+        {% endfor %}
+      </ul>
+    </div>
+
+
+    <div class="lmnt-nav-right">
+      <a href="#wholesale">
+        <div class="lmnt-nav-focus">
+          <span>
+            0{{ nav-counter | plus: 1 }}
+          </span>
+          Wholesale
+        </div>
+      </a>
+      <a href="#contact">
+        <div class="lmnt-nav-contact">
+          <img src="{{site.baseurl}}/assets/icons/ico-mail.svg" />
+        </div>
+      </a>
+    </div>
+
+  </div>
+</nav>

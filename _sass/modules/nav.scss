@@ -1,1 +1,94 @@
 // nav
+
+$nav-height:70px;
+$nav-border:2px solid $clr-plum;
+
+nav {
+  position:fixed;
+  width:100%;
+  padding:$base/3;
+  font-family:$fnt-header;
+  .lmnt-nav-inner {
+    width:100%;
+    max-width:$base-max-width;
+    margin:0 auto;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    border:$nav-border;
+    height:$nav-height;
+    background-color:$clr-canvas;
+    .lmnt-nav-list, .lmnt-nav-right, .lmnt-nav-left {
+      list-style-type:none;
+      margin:0;
+      padding:0;
+      display:inline-flex;
+      flex-direction:row;
+      align-items:stretch;
+      height:$nav-height;
+    }
+    .lmnt-nav-left {
+      align-items:center;
+      .lmnt-nav-logo {
+        padding:0 $base/4;
+        border-right:$nav-border;
+        height:$nav-height;
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        img {
+          &:first-child {
+            margin-right:10px;
+          }
+        }
+      }
+    }
+    li, .lmnt-nav-focus {
+      border-right:2px solid rgba($clr-plum,1);
+      border-top:2px solid rgba($clr-plum,1);
+      border-bottom:2px solid rgba($clr-plum,1);
+      padding:0 $base/2;
+      align-content:center;
+      line-height:($nav-height)-(4px);
+      background-color:rgba($clr-plum,0);
+      color:$clr-plum !important;
+      transform:scale(1);
+      transform-origin:center center;
+      transition:all .25s ease;
+      position:relative;
+      span {
+        position:absolute;
+        font-family:$fnt-body;
+        left:5px;
+        top:10px;
+        color:$clr-orange;
+        font-size:10px;
+        line-height:0;
+        transition:all .25s ease;
+      }
+      &:hover {
+        // border-right:2px solid rgba($clr-plum,0);
+        background-color:rgba($clr-plum,1);
+        color:$clr-white !important;
+        // transform:scale(1.1);
+        span {
+          color:$clr-orange;
+        }
+      }
+    }
+    .lmnt-nav-focus {
+      border-left:2px solid rgba($clr-plum,1);
+      &:hover {
+        border-left:2px solid rgba($clr-plum,0);
+      }
+    }
+    .lmnt-nav-contact {
+      display:flex;
+      flex-direction:row;
+      align-items:center;
+      height:$nav-height;
+      padding:0 $base/4;
+    }
+  }
+}

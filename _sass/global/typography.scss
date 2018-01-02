@@ -1,10 +1,19 @@
 // typography
 
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Bungee|Rubik:400,500,700,900');
 
-$fnt-body: 'Open Sans', 'Helvetica', sans-serif;
-$fnt-header: 'Karla', 'Open Sans', 'Helvetica', sans-serif;
+@font-face{
+	font-family:Regina Black Hilite;
+	font-style:normal;
+	font-weight:400;
+	font-stretch:none;
+	font-synthesis:none;
+	src:url("/assets/fonts/ReginaBlack-Hilite.woff2") format("woff2"), url("/assets/fonts/ReginaBlack-Hilite.woff") format("woff"), url("/assets/fonts/ReginaBlack-Hilite.ttf") format("truetype");
+};
+
+$fnt-body: 'Rubik', 'Helvetica', sans-serif;
+$fnt-header: 'Bungee', 'Helvetica', sans-serif;
+$fnt-quote: 'Regina Black', 'Helvetica', sans-serif;
 $fnt-body-size: 20px;
 $fnt-color-default: #000;
 

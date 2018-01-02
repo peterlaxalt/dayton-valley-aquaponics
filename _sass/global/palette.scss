@@ -1,1 +1,31 @@
 // palette
+
+$clr-orange:#EF7809;
+$clr-plum:#002053;
+$clr-dust:#FFEAD1;
+$clr-aqua:#01BECF;
+$clr-white:#ffffff;
+$clr-mud:#463725;
+$clr-canvas:#FDFDF4;
+
+body {
+  background-color:$clr-canvas;
+  color:$clr-plum;
+  a, a:visited, a:hover, a:active {
+    color:$clr-plum;
+    text-decoration:none;
+  }
+}
+
+// selections
+
+::-moz-selection {
+  background:$clr-orange;
+  opacity:100%;
+  color:$clr-white;
+ }
+::selection {
+  background:$clr-orange;
+  opacity:100%;
+  color:$clr-white;
+ }

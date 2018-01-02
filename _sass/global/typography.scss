@@ -2,40 +2,25 @@
 
 @import url('https://fonts.googleapis.com/css?family=Bungee|Rubik:400,500,700,900');
 
-@font-face{
-	font-family:Regina Black Hilite;
-	font-style:normal;
-	font-weight:400;
-	font-stretch:none;
-	font-synthesis:none;
-	src:url("/assets/fonts/ReginaBlack-Hilite.woff2") format("woff2"), url("/assets/fonts/ReginaBlack-Hilite.woff") format("woff"), url("/assets/fonts/ReginaBlack-Hilite.ttf") format("truetype");
-};
+@font-face {
+  font-family: "Regina Black";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: none;
+  font-synthesis: none;
+  src: url("/assets/fonts/ReginaBlack-Solid.woff2") format("woff2"),
+       url("/assets/fonts/ReginaBlack-Solid.woff")  format("woff"),
+       url("/assets/fonts/ReginaBlack-Solid.ttf")   format("truetype");
+}
 
 $fnt-body: 'Rubik', 'Helvetica', sans-serif;
 $fnt-header: 'Bungee', 'Helvetica', sans-serif;
 $fnt-quote: 'Regina Black', 'Helvetica', sans-serif;
 $fnt-body-size: 20px;
-$fnt-color-default: #000;
 
 body {
 	font-family: $fnt-body;
-	color:$fnt-color-default;
 }
-
-// #####################################
-// selections
-// #####################################
-
-::-moz-selection {
-  background: black;
-  opacity:100%;
-  color:pink;
- }
-::selection {
-  background: black;
-  opacity:100%;
-  color:pink;
- }
 
 // #####################################
 // headers

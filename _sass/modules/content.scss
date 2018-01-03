@@ -256,3 +256,66 @@ a.anchor {
     }
   }
 }
+
+// lmnt-who-poster
+
+.lmnt-who-poster {
+  background-color:$clr-plum;
+  padding:$base/1.5;
+  .lmnt-who-poster-inner {
+    border:4px solid $clr-white;
+    color:$clr-white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    .txt-caption {
+      &:first-child {
+        padding-bottom:$base*4;
+      }
+      &:last-child {
+        padding-top:$base*4;
+      }
+    }
+    .lmnt-who-poster-section {
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      padding-bottom:$base*3;
+      margin-bottom:$base;
+      position:relative;
+      &:before {
+        content:'';
+        position:absolute;
+        left:50%;
+        bottom:0;
+        transform:translateX(-50%);
+        background-color:$clr-white;
+        height:$base*2;
+        width:3px;
+      }
+      &.lmnt-who-poster-section-last {
+        margin-bottom:0;
+        padding-bottom:0;
+        &:before {
+          display:none;
+        }
+      }
+      h1 {
+        font-size:30vw;
+        line-height:1;
+        letter-spacing:-2vw;
+        margin:0;
+        font-family:$fnt-body;
+      }
+      h2 {
+        font-size:18vw;
+        line-height:1;
+        letter-spacing:0vw;
+        margin:0;
+        font-family:$fnt-body;
+      }
+    }
+  }
+}

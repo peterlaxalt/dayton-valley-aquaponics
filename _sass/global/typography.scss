@@ -73,7 +73,7 @@ h4 {
 // #####################################
 
 p {
-	font-size:25px;
+	font-size:1.7vw;
   line-height:1.8;
 	font-family:$fnt-body;
   margin:0;
@@ -89,6 +89,14 @@ p {
 
 .txt-right {
 	text-align:right;
+}
+
+.txt-caption {
+  text-transform:uppercase;
+  font-size:16px;
+  letter-spacing:3px;
+  color:$clr-orange;
+  margin:15px 0px;
 }
 
 
@@ -108,4 +116,50 @@ p {
 // 3d text
 .txt-3d-plum {
   text-shadow: 0px 0px $clr-plum, 1px 1px $clr-plum, 2px 2px $clr-plum, 3px 3px $clr-plum, 4px 4px $clr-plum, 5px 5px $clr-plum, 6px 6px $clr-plum, 7px 7px $clr-plum, 8px 8px $clr-plum, 9px 9px $clr-plum, 10px 10px $clr-plum, 11px 11px $clr-plum, 12px 12px $clr-plum;
+}
+
+// outlined text
+.txt-border-orange {
+  color: $clr-orange;
+   -webkit-text-fill-color: $clr-plum; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: $clr-orange;
+}
+
+.txt-border-white {
+  color: $clr-aqua;
+   -webkit-text-fill-color: $clr-aqua; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: $clr-white;
+}
+
+// vw text
+
+.txt-1-vw {
+  font-size:1vw;
+  line-height:1.1;
+}
+.txt-2-vw {
+  font-size:2vw;
+  line-height:1.1;
+}
+.txt-3-vw {
+  font-size:3vw;
+  line-height:1.1;
+}
+.txt-3-vw {
+  font-size:3vw;
+  line-height:1.1;
+}
+.txt-4-vw {
+  font-size:4vw;
+  line-height:1.1;
+}
+.txt-5-vw {
+  font-size:5vw;
+  line-height:1.1;
+}
+.txt-6-vw {
+  font-size:6vw;
+  line-height:1.1;
 }

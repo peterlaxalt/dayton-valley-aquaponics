@@ -4,14 +4,16 @@
 
     <div class="lmnt-nav-left">
       <div class="lmnt-nav-logo">
-        <img src="{{site.baseurl}}/assets/images/img-brandmark.svg" />
-        <img src="{{site.baseurl}}/assets/images/img-logotype.svg" />
+        <a data-scroll href="#top">
+          <img src="{{site.baseurl}}/assets/images/img-brandmark.svg" />
+          <img src="{{site.baseurl}}/assets/images/img-logotype.svg" />
+        </a>
       </div>
 
       <ul class="lmnt-nav-list">
         {% for link in site.data.nav.links %}
           {% assign nav-counter = nav-counter | plus: 1 %}
-          <a href="{{ link.url }}">
+          <a data-scroll href="{{ link.url }}">
             <li>
               <span>
                 0{{ nav-counter }}

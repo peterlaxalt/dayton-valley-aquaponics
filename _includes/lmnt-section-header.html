@@ -1,0 +1,17 @@
+<section class="lmnt-who-intro lmnt-section-header row-full-width row-relative">
+  <a class="anchor" id="{{ include.anchor }}"></a>
+  <div class="row-site-width row row-flex flex-align-center flex-col lmnt-section-header-inner">
+    <h4 class="txt-clr-orange txt-center">
+      {{ include.subhead }}
+    </h4>
+    <h2 class="txt-clr-plum txt-center">
+      {{ include.headline }}
+    </h2>
+    {% if include.typed == "true" %}
+    <div class="lmnt-typed-wrapper row-flex start flex-center">
+      <h2 class="lmnt-community-typed txt-clr-aqua txt-center txt-3d-plum">
+      </h2>
+    </div>
+    {% endif %}
+  </div>
+</section>

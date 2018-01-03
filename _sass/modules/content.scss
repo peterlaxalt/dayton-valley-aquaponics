@@ -9,7 +9,7 @@ body {
 a.anchor {
   display: block;
   position: relative;
-  top: 70px;
+  top: -150px;
   visibility: hidden;
 }
 
@@ -126,7 +126,7 @@ a.anchor {
 // lmnt-section-header
 
 .lmnt-section-header {
-  padding:$base*5 $base/2;
+  padding:$base*5 $base;
   &:before, &:after {
     content:'';
     width:2px;
@@ -154,6 +154,105 @@ a.anchor {
       top:50%;
       transform:translate(-50%,-50%);
       z-index:-1;
+    }
+  }
+  .lmnt-typed-wrapper {
+    height:130px;
+    .lmnt-community-typed {
+      display:inline-block;
+    }
+    .typed-cursor {
+      @extend .txt-clr-aqua;
+      @extend .txt-3d-plum;
+      @extend h2;
+    }
+  }
+}
+
+// lmnt-who-grid
+.lmnt-who-grid {
+  padding-top:$base*2;
+}
+
+// lmnt-grid
+.lmnt-grid {
+  flex-wrap:wrap;
+  padding:($base/4)/2;
+  .lmnt-grid-item {
+    display:flex;
+    flex-direction:column;
+    padding:($base/4)/2;
+    &.lmnt-meta-grid {
+      padding:0;
+      display:flex;
+      flex-direction:row;
+      flex-wrap:wrap;
+    }
+    &.lmnt-grid-item-100h {
+      height:100%;
+    }
+    .lmnt-grid-item-inner {
+      padding:$base/2;
+      position:relative;
+      height:100%;
+      background-position:center center;
+      background-size:cover;
+      background-repeat:no-repeat;
+      // spacing
+      &.lmnt-grid-item-spacing {
+        padding:$base;
+      }
+      // text styles
+      h2 {
+        margin-bottom:$base/3;
+      }
+      h3 {
+        font-size:4vw;
+        line-height:1.2;
+        margin-bottom:10px;
+      }
+      h4 {
+        font-size:6vw;
+        font-family:$fnt-body;
+        font-weight:900;
+        margin:0;
+        letter-spacing:0;
+      }
+      .lmnt-grid-item-embellish {
+        font-size:18px;
+        font-weight:400;
+        letter-spacing:1px;
+        text-transform:uppercase;
+        color:$clr-orange;
+        padding:$base/3;
+      }
+      .lmnt-grid-item-year {
+        border:7px solid $clr-orange;
+        padding:5px;
+        font-size:18px;
+        font-weight:400;
+        letter-spacing:4px;
+      }
+    }
+  }
+  .lmnt-third {
+    height:30vw;
+    &.lmnt-divide-border-left {
+      padding-left:($base/4)/2;
+    }
+  }
+  .lmnt-two-third {
+    &.lmnt-divide-border-right {
+      padding-right:($base/4)/2;
+      border-right:dotted $clr-aqua 4px;
+    }
+    .lmnt-half {
+      height:33.33333333vw;
+    }
+    .lmnt-grid-item-100h {
+      &.lmnt-half {
+        height:inherit;
+      }
     }
   }
 }

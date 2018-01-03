@@ -43,6 +43,19 @@ h2 {
   }
 }
 
+h3 {
+  font-size:6vw;
+  margin:0;
+  padding:0;
+  font-family:$fnt-body;
+  font-weight:900;
+  text-transform:uppercase;
+  line-height:.9;
+  @media (max-width:$base-sm) {
+    font-size:9vw;
+  }
+}
+
 h4 {
   margin:$base/6 0;
   line-height:1;
@@ -60,8 +73,10 @@ h4 {
 // #####################################
 
 p {
-	font-size:$fnt-body-size;
-	font-family: $fnt-body;
+	font-size:25px;
+  line-height:1.8;
+	font-family:$fnt-body;
+  margin:0;
 }
 
 .txt-center {

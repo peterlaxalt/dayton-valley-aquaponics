@@ -59,3 +59,50 @@ color:$clr-mud;
 .txt-clr-canvas {
 color:$clr-canvas;
 }
+
+// backgrounds
+
+.bg-clr-orange {
+background-color:$clr-orange;
+}
+
+.bg-clr-plum {
+background-color:$clr-plum;
+}
+
+.bg-clr-dust {
+background-color:$clr-dust;
+}
+
+.bg-clr-aqua {
+background-color:$clr-aqua;
+}
+
+.bg-clr-white {
+background-color:$clr-white;
+}
+
+.bg-clr-mud {
+background-color:$clr-mud;
+}
+
+.bg-clr-canvas {
+background-color:$clr-canvas;
+}
+
+// line breaks
+
+.txt-break-orange {
+  position:relative;
+  padding-bottom:$base/2;
+  margin-bottom:$base/2;
+  &:before {
+    content:'';
+    width:100px;
+    height:6px;
+    background-color:$clr-orange;
+    position:absolute;
+    left:0;
+    bottom:0;
+  }
+}

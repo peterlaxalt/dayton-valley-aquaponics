@@ -461,3 +461,42 @@ a.anchor {
     }
   }
 }
+
+// lmnt-what-finest
+
+.lmnt-what-finest {
+  height:700px;
+  padding:$base/2;
+  .lmnt-what-finest-container {
+    max-width:($base-max-width)-($base*4);
+    width:100%;
+    margin:0 auto;
+  }
+  h2 {
+    transform: skew(0deg, -9deg);
+    display:inline-block;
+    padding:$base/4 0;
+    border-top: 24px solid $clr-orange;
+    border-bottom: 24px solid $clr-orange;
+    text-align:center;
+    @media (max-width:1300px) {
+      font-size:22vw;
+    }
+    @media (min-width:1300px) {
+      font-size:16vw;
+    }
+  }
+  span {
+    font-family:$fnt-body;
+    font-weight:900;
+    font-size:2.2vw;
+    text-transform:uppercase;
+    &.abs-left-top {
+      max-width:20vw;
+      top:-3vw;
+    }
+    &.abs-right-bottom {
+      bottom:-3vw;
+    }
+  }
+}

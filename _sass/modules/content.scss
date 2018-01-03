@@ -29,9 +29,17 @@ body {
     transform: translate(-50%,-50%);
     max-width:100vw;
     width:100%;
+    @media (max-width:$base-sm) {
+      width:200vw;
+      max-width:200vw;
+    }
     img {
       max-width:100vw;
       width:100%;
+      @media (max-width:$base-sm) {
+        width:200vw;
+        max-width:200vw;
+      }
     }
     .lmnt-hero-spin {
       transform-origin:center center;
@@ -48,6 +56,13 @@ body {
       transition: all 1s ease;
       &:hover {
         max-width:30vw;
+      }
+      @media (max-width:$base-sm) {
+        width:35vh;
+        max-width:35vh;
+        &:hover {
+          max-width:40vh;
+        }
       }
     }
   }

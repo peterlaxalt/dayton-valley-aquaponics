@@ -35,6 +35,18 @@ a.anchor {
   right:0;
   top:0;
 }
+.abs-fullwidth-top {
+  position:absolute;
+  right:0;
+  left:0;
+  top:0;
+}
+.abs-fullwidth-bottom {
+  position:absolute;
+  right:0;
+  left:0;
+  bottom:0;
+}
 
 // lmnt-hero
 @-webkit-keyframes brandspin {
@@ -171,6 +183,48 @@ a.anchor {
       @extend .txt-clr-aqua;
       @extend .txt-3d-plum;
       @extend h2;
+    }
+  }
+}
+
+// lmnt-section-header-aqua
+
+.lmnt-section-header-aqua {
+  padding:$base*3.5 $base;
+  margin:$base*3 auto;
+  background-color:$clr-aqua;
+  &:before, &:after {
+    content:'';
+    width:2px;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    height:($base*5);
+    background-color:$clr-plum;
+    z-index:200;
+  }
+  &:before {
+    top:0-($base*2);
+  }
+  &:after {
+    bottom:0-($base*2);
+  }
+  .lmnt-section-header-inner {
+    position:relative;
+    h4, h2 {
+      z-index:200;
+    }
+    &:before {
+      content:'';
+      position:absolute;
+      width:70vh;
+      height:70vh;
+      border-radius:50%;
+      background-color:darken($clr-aqua,10%);
+      left:50%;
+      top:50%;
+      transform:translate(-50%,-50%);
+      z-index:1;
     }
   }
 }
@@ -497,6 +551,66 @@ a.anchor {
     }
     &.abs-right-bottom {
       bottom:-3vw;
+    }
+  }
+}
+
+// lmnt-quote-row
+
+.lmnt-quote-row {
+  p {
+    font-size:4vw;
+    line-height:1.2;
+    padding:0 $base $base $base;
+  }
+}
+
+// lmnt-year-round-poster
+
+.lmnt-year-round-poster {
+  padding:$base*6 $base;
+  position:relative;
+  &:before {
+    content:'';
+    position:absolute;
+    width:55vw;
+    height:55vw;
+    border-radius:50%;
+    background-color:$clr-aqua;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    z-index:5;
+  }
+  .abs-fullwidth-top, .abs-fullwidth-bottom {
+    overflow:hidden;
+    img {
+      min-width:100vw !important;
+      min-height:4vh !important;
+    }
+  }
+  .abs-fullwidth-bottom {
+    bottom:-6px;
+  }
+  .abs-fullwidth-top {
+    top:-5px;
+  }
+  .lmnt-year-round-poster-inner {
+    position:relative;
+    z-index:200;
+    h3 {
+      font-size:2.6vw;
+      line-height:1.2;
+      padding:0 $base*4;
+    }
+    .lmnt-year-round-skew {
+      transform: skew(0deg, -9deg);
+      display:inline-block;
+      padding:$base/4 0;
+      border-top: 24px solid $clr-orange;
+      border-bottom: 24px solid $clr-orange;
+      margin:$base 0;
+      font-size:10vw;
     }
   }
 }

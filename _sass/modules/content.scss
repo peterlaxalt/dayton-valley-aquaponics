@@ -246,11 +246,18 @@ a.anchor {
     &.lmnt-divide-border-left {
       padding-left:($base/4)/2;
     }
+    &.lmnt-divide-border-right-padding {
+      padding-right:($base/4)/2;
+    }
   }
   .lmnt-two-third {
     &.lmnt-divide-border-right {
       padding-right:($base/4)/2;
       border-right:dotted $clr-aqua 4px;
+    }
+    &.lmnt-divide-border-left-dotted {
+      padding-left:($base/4)/2;
+      border-left:dotted $clr-aqua 4px;
     }
     .lmnt-half {
       height:33.33333333vw;
@@ -360,6 +367,97 @@ a.anchor {
     }
     img {
       border:30px solid $clr-dust;
+    }
+  }
+}
+
+// lmnt-section-caption
+
+.lmnt-section-caption {
+  position:relative;
+  z-index:200;
+  padding:$base*3 $base/2;
+  &.lmnt-section-caption-top {
+    &:before {
+      content:'';
+      position:absolute;
+      left:50%;
+      transform:translateX(-50%);
+      width:3px;
+      height:$base*6;
+      bottom:0-($base*3);
+      background-color:$clr-aqua;
+    }
+  }
+  &.lmnt-section-caption-bottom {
+    &:before {
+      content:'';
+      position:absolute;
+      left:50%;
+      transform:translateX(-50%);
+      width:3px;
+      height:$base*6;
+      top:0-($base*3);
+      background-color:$clr-aqua;
+    }
+  }
+}
+
+// lmnt-how-poster
+
+.lmnt-how-poster {
+  background-color:$clr-plum;
+  padding:$base/1.5;
+  .lmnt-how-poster-inner {
+    border:4px solid $clr-white;
+    color:$clr-white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:($base*2)+25px 0;
+    p {
+      font-size:4vw;
+      line-height:1.2;
+      padding:0 $base;
+    }
+    .lmnt-how-poster-section-top {
+      border-bottom:4px solid $clr-white;
+      padding:$base*2 10.2vw;
+      position:relative;
+      &:after, &:before {
+        content:'';
+        height:4px;
+        width:10vw;
+        background-color:$clr-white;
+        position:absolute;
+        top:50%;
+        transform:translateY(-50%);
+      }
+      &:after {
+        left:0;
+      }
+      &:before {
+        right:0;
+      }
+    }
+    .lmnt-how-poster-section-bottom {
+      padding:$base*2 $base;
+      position:relative;
+      &:after, &:before {
+        content:'';
+        height:4px;
+        width:20vw;
+        background-color:$clr-white;
+        position:absolute;
+        bottom:-25px;
+      }
+      &:after {
+        left:0;
+      }
+      &:before {
+        right:0;
+      }
     }
   }
 }

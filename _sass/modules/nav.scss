@@ -52,7 +52,7 @@ nav {
       padding:0 $base/2;
       align-content:center;
       line-height:($nav-height)-(4px);
-      background-color:rgba($clr-plum,0);
+      background-color:rgba($clr-aqua,0);
       color:$clr-plum !important;
       transform:scale(1);
       transform-origin:center center;
@@ -70,7 +70,7 @@ nav {
       }
       &:hover {
         // border-right:2px solid rgba($clr-plum,0);
-        background-color:rgba($clr-plum,1);
+        background-color:rgba($clr-aqua,1);
         color:$clr-white !important;
         // transform:scale(1.1);
         span {

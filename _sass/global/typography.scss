@@ -30,6 +30,31 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $fnt-header;
 }
 
+h2 {
+  font-size:8vw;
+  margin:0;
+  padding:0;
+  font-family:$fnt-body;
+  font-weight:900;
+  text-transform:uppercase;
+  line-height:.9;
+  @media (max-width:$base-sm) {
+    font-size:9vw;
+  }
+}
+
+h4 {
+  margin:$base/6 0;
+  line-height:1;
+  font-size:28px;
+  text-transform:uppercase;
+  letter-spacing:4px;
+  @media (max-width:$base-sm) {
+    font-size:16px;
+  }
+}
+
+
 // #####################################
 // body copy
 // #####################################
@@ -49,4 +74,23 @@ p {
 
 .txt-right {
 	text-align:right;
+}
+
+
+// vertical text
+
+.lmnt-vertical-text {
+  position:absolute;
+  left:0;
+  top:0;
+  line-height:0;
+  pointer-events:none;
+  transform:rotate(-90deg);
+  transform-origin:center center;
+  z-index:0;
+}
+
+// 3d text
+.txt-3d-plum {
+  text-shadow: 0px 0px $clr-plum, 1px 1px $clr-plum, 2px 2px $clr-plum, 3px 3px $clr-plum, 4px 4px $clr-plum, 5px 5px $clr-plum, 6px 6px $clr-plum, 7px 7px $clr-plum, 8px 8px $clr-plum, 9px 9px $clr-plum, 10px 10px $clr-plum, 11px 11px $clr-plum, 12px 12px $clr-plum;
 }

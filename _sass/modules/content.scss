@@ -4,6 +4,38 @@ body {
   min-height: 100vh;
 }
 
+// anchors
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: 70px;
+  visibility: hidden;
+}
+
+// positioning
+
+.abs-left-bottom {
+  position:absolute;
+  left:0;
+  bottom:0;
+}
+.abs-right-bottom {
+  position:absolute;
+  right:0;
+  bottom:0;
+}
+.abs-left-top {
+  position:absolute;
+  left:0;
+  top:0;
+}
+.abs-right-top {
+  position:absolute;
+  right:0;
+  top:0;
+}
+
 // lmnt-hero
 @-webkit-keyframes brandspin {
   0% {
@@ -87,6 +119,41 @@ body {
     }
     a:hover {
       letter-spacing:8px;
+    }
+  }
+}
+
+// lmnt-section-header
+
+.lmnt-section-header {
+  padding:$base*5 $base/2;
+  &:before, &:after {
+    content:'';
+    width:2px;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    height:($base*5)/1.5;
+    background-color:$clr-aqua;
+  }
+  &:before {
+    top:0;
+  }
+  &:after {
+    bottom:0;
+  }
+  .lmnt-section-header-inner {
+    &:before {
+      content:'';
+      position:absolute;
+      width:70vh;
+      height:70vh;
+      border-radius:50%;
+      background-color:$clr-dust;
+      left:50%;
+      top:50%;
+      transform:translate(-50%,-50%);
+      z-index:-1;
     }
   }
 }

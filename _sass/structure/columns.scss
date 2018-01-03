@@ -169,6 +169,11 @@ div[class^="lmnt-"], div[class*=" lmnt-"] {
   height:($lmnt-third*1.78)+unquote("vw");
 }
 
+.lmnt-sq-how-grid-fix {
+  // sorry, mom
+  height:66.5vw;
+}
+
 .lmnt-sq-quarter {
   height:($lmnt-quarter)+unquote("vw");
 }

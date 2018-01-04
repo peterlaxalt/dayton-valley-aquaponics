@@ -96,3 +96,25 @@ $('.lmnt-watch-fade-in-4').inViewport(
     function(){$(this).addClass("lmnt-in-view");},
     function(){$(this).removeClass("lmnt-in-view");}
 );
+
+// zooms
+
+$('.lmnt-watch-zoom-in-1').inViewport(
+    function(){$(this).addClass("lmnt-in-view");},
+    function(){$(this).removeClass("lmnt-in-view");}
+);
+
+$('.lmnt-watch-zoom-in-2').inViewport(
+    function(){$(this).addClass("lmnt-in-view");},
+    function(){$(this).removeClass("lmnt-in-view");}
+);
+
+$('.lmnt-watch-zoom-in-3').inViewport(
+    function(){$(this).addClass("lmnt-in-view");},
+    function(){$(this).removeClass("lmnt-in-view");}
+);
+
+$('.lmnt-watch-zoom-in-4').inViewport(
+    function(){$(this).addClass("lmnt-in-view");},
+    function(){$(this).removeClass("lmnt-in-view");}
+);

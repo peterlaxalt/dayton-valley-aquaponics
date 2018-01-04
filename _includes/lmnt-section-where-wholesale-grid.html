@@ -13,21 +13,27 @@
 
   <div class="lmnt-wholesale-grid">
 
+    {% assign watch-count = 0 %}
     {% for stockist in site.data.wholesale.stockists %}
-    <div class="lmnt-vendor-card">
-      <div class="lmnt-vendor-card-inner" style="background-image:url('{{ stockist.cover }}');">
-        <a href="{{ stockist.url }}" target="_blank">
-          <div class="lmnt-vendor-card-overlay">
-            <span>
-              {{ stockist.location }}
-            </span>
-            <h5>
-              {{ stockist.name }}
-            </h5>
-          </div>
-        </a>
+      {% if watch-count < 4 %}
+        {% assign watch-count = watch-count | plus: 1 %}
+      {% else %}
+        {% assign watch-count = 0 %}
+      {% endif %}
+      <div class="lmnt-vendor-card lmnt-watch-fade-in-{{ watch-count }}">
+        <div class="lmnt-vendor-card-inner" style="background-image:url('{{ stockist.cover }}');">
+          <a href="{{ stockist.url }}" target="_blank">
+            <div class="lmnt-vendor-card-overlay">
+              <span>
+                {{ stockist.location }}
+              </span>
+              <h5>
+                {{ stockist.name }}
+              </h5>
+            </div>
+          </a>
+        </div>
       </div>
-    </div>
     {% endfor %}
 
   </div>

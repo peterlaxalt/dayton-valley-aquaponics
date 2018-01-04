@@ -119,8 +119,10 @@
 }
 
 // #####################################
-// scroll effects
+// LMNT WATCH
 // #####################################
+
+// slides
 
 .lmnt-watch-slide-from-left {
   transition:all 1.5s ease;
@@ -162,6 +164,8 @@
   }
 }
 
+// fades
+
 .lmnt-watch-fade-in-1 {
   opacity:0;
   transition:all 2.5s ease;
@@ -191,5 +195,47 @@
   transition:all 5.5s ease;
   &.lmnt-in-view {
     opacity:1;
+  }
+}
+
+// zooms
+
+.lmnt-watch-zoom-in-1 {
+  opacity:0;
+  transform:scale(0);
+  transition:all 2.5s ease;
+  &.lmnt-in-view {
+    opacity:1;
+    transform:scale(1);
+  }
+}
+
+.lmnt-watch-zoom-in-2 {
+  opacity:0;
+  transform:scale(0);
+  transition:all 3.5s ease;
+  &.lmnt-in-view {
+    opacity:1;
+    transform:scale(1);
+  }
+}
+
+.lmnt-watch-zoom-in-3 {
+  opacity:0;
+  transform:scale(0);
+  transition:all 4.5s ease;
+  &.lmnt-in-view {
+    opacity:1;
+    transform:scale(1);
+  }
+}
+
+.lmnt-watch-zoom-in-4 {
+  opacity:0;
+  transform:scale(0);
+  transition:all 5.5s ease;
+  &.lmnt-in-view {
+    opacity:1;
+    transform:scale(1);
   }
 }

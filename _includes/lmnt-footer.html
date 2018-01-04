@@ -13,7 +13,7 @@
 <footer>
 	<div class="lmnt-footer-top">
 		<div class="lmnt-footer-top-left">
-			<a href="mailto:" class="lmnt-foot-button">
+			<a href="mailto:{{ site.data.social.email }}" class="lmnt-foot-button">
 				<img src="{{site.baseurl}}/assets/icons/ico-mail-alt.svg" /> Questions?
 			</a>
 		</div>
@@ -22,26 +22,26 @@
 				Share the Knowledge
 			</span>
 			<span>
-				<a href="{{ site.data.social.fb }}" target="_blank" class="lmnt-footer-social-share-icon lmnt-bounce-1">
+				<a href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}" target="_blank" class="lmnt-footer-social-share-icon lmnt-bounce-1">
 					<img src="{{site.baseurl}}/assets/icons/ico-fb-white.svg" />
 				</a>
-				<a href="{{ site.data.social.twitter }}" target="_blank" class="lmnt-footer-social-share-icon lmnt-bounce-2">
+				<a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ site.baseurl }}{{ page.url }}&text={{page.title}}&via={{site.data.social.twitter-handle}}&hashtags={{site.data.social.twitter-hashtags}}" target="_blank" class="lmnt-footer-social-share-icon lmnt-bounce-2">
 					<img src="{{site.baseurl}}/assets/icons/ico-twitter-white.svg" />
 				</a>
-				<a href="{{ site.data.social.linkedin }}" target="_blank" class="lmnt-footer-social-share-icon lmnt-bounce-3">
+				<a href="https://www.linkedin.com/shareArticle?url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{page.title}}" target="_blank" class="lmnt-footer-social-share-icon lmnt-bounce-3">
 					<img src="{{site.baseurl}}/assets/icons/ico-linkedin-white.svg" />
 				</a>
-				<a href="{{ site.data.social.reddit }}" target="_blank" class="lmnt-footer-social-share-icon lmnt-bounce-4">
+				<a href="https://reddit.com/submit?url={{ site.url }}&title={{page.title}}" target="_blank" class="lmnt-footer-social-share-icon lmnt-bounce-4">
 					<img src="{{site.baseurl}}/assets/icons/ico-reddit-white.svg" />
 				</a>
 			</span>
 		</div>
 		<div class="lmnt-footer-top-right">
 			Follow us
-			<a href="{{ site.data.social.fb }}" target="_blank">
+			<a href="{{ site.data.social.facebook }}" target="_blank">
 				<img src="{{site.baseurl}}/assets/icons/ico-fb-plum.svg" />
 			</a>
-			<a href="{{ site.data.social.insta }}" target="_blank">
+			<a href="{{ site.data.social.instagram }}" target="_blank">
 				<img src="{{site.baseurl}}/assets/icons/ico-insta-plum.svg" />
 			</a>
 		</div>

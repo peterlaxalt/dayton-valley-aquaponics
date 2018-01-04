@@ -1,10 +1,8 @@
-# daytonvalleyaquaponics.com
-
-Dayton Valley Aquaponics Micro Site
+# Dayton Valley Aquaponics
 by Peter Laxalt 2018 (laxaltandmciver.co) (peterlaxalt.dribbble.com)
 
 ## Run On Development
-1. Be sure you have Jekyll installed.  Reference the official Jekyll [documentation](https://jekyllrb.com/docs/installation/) for getting setup.
+1. We built this site using Jekyll.  Reference the official Jekyll [documentation](https://jekyllrb.com/docs/installation/) for getting setup.
 2. `git clone git@github.com:peterlaxalt/dayton-valley-aquaponics.git`
 3. `cd dayton-valley-aquaponics`
 4. `bundle install`
@@ -15,6 +13,7 @@ by Peter Laxalt 2018 (laxaltandmciver.co) (peterlaxalt.dribbble.com)
 - You can access your ```localhost:4000``` from any device because ```.ngrok``` is amazing.
 - In the ```/_ngrok/``` folder you'll find a .zip file with .ngrok in it. Install that.
 - In terminal, simply type ```$ ./ngrok http 4000``` to fire up a server and they will provide urls.
+- Be sure that if you are on development and potentially behind a directory such as ```/dayton-valley-aquaponics/```, you'll have to append that to your .ngrok url.
 
 ## Deploy via Terminal
 - We're hosted up on Github pages, deploying off of the ```master``` branch.

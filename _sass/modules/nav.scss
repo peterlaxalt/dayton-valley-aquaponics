@@ -39,6 +39,9 @@ nav {
         flex-wrap:nowrap;
         flex-direction:row;
         align-items:center;
+        @media (max-width:$base-sm) {
+          border-right:none;
+        }
         img {
           &:first-child {
             margin-right:10px;
@@ -95,6 +98,9 @@ nav {
       justify-content:center;
       height:$nav-height;
       padding:0 $base/4;
+      @media (max-width:$base-sm) {
+        border-left:2px solid rgba($clr-plum,1);
+      }
       .lmnt-nav-contact {
         @media (max-width:$base-sm) {
           display:none;

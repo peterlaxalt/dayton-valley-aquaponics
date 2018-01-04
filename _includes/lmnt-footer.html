@@ -1,10 +1,10 @@
 <div class="lmnt-section-header-plum row-full-width row-relative">
 	<a class="anchor" id="contact"></a>
 	<div class="row-site-width row row-flex flex-align-center flex-col lmnt-section-header-inner">
-		<h4 class="txt-clr-white txt-center">
+		<h4 class="txt-clr-white txt-center lmnt-watch-slide-from-top">
 			Dayton Valley Aquaponics
 		</h4>
-		<h2 class="txt-clr-white txt-center">
+		<h2 class="txt-clr-white txt-center lmnt-watch-slide-from-top">
 			SUSTAINABLE AQUAPONICS DONE RIGHT.
 		</h2>
 	</div>
@@ -61,10 +61,18 @@
 	</div>
 </footer>
 
+
+
+
+
+
+{% comment %}
+footer scripts
+{% endcomment %}
+
 <script>
 	var scroll = new SmoothScroll('a[href*="#"]');
 </script>
-
 
 <script>
   $(function(){
@@ -94,3 +102,5 @@ $('.lmnt-testimonial-slider').slick({
   autoplaySpeed: 5000,
 });
 </script>
+
+<script type="text/javascript" src="{{site.baseurl}}/js/inviewport.js"></script>

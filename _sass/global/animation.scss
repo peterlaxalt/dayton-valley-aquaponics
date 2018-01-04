@@ -78,7 +78,9 @@
   animation: marquee 5s linear infinite;
 }
 
+// #####################################
 // bounce
+// #####################################
 
 @-webkit-keyframes bounce {
   0% {
@@ -113,5 +115,81 @@
   }
   100% {
     transform: translate(-50%,-50%) scale(.8);
+  }
+}
+
+// #####################################
+// scroll effects
+// #####################################
+
+.lmnt-watch-slide-from-left {
+  transition:all 1.5s ease;
+  transform:translateX(-50%);
+  opacity:0;
+  &.lmnt-in-view {
+    transform:translateX(0%);
+    opacity:1;
+  }
+}
+
+.lmnt-watch-slide-from-right {
+  transition:all 1.5s ease;
+  transform:translateX(50%);
+  opacity:0;
+  &.lmnt-in-view {
+    transform:translateX(0%);
+    opacity:1;
+  }
+}
+
+.lmnt-watch-slide-from-bottom {
+  transition:all 1.5s ease;
+  transform:translateY(-50%);
+  opacity:0;
+  &.lmnt-in-view {
+    transform:translateX(0%);
+    opacity:1;
+  }
+}
+
+.lmnt-watch-slide-from-top {
+  transition:all 1.5s ease;
+  transform:translateY(50%);
+  opacity:0;
+  &.lmnt-in-view {
+    transform:translateX(0%);
+    opacity:1;
+  }
+}
+
+.lmnt-watch-fade-in-1 {
+  opacity:0;
+  transition:all 2.5s ease;
+  &.lmnt-in-view {
+    opacity:1;
+  }
+}
+
+.lmnt-watch-fade-in-2 {
+  opacity:0;
+  transition:all 3.5s ease;
+  &.lmnt-in-view {
+    opacity:1;
+  }
+}
+
+.lmnt-watch-fade-in-3 {
+  opacity:0;
+  transition:all 4.5s ease;
+  &.lmnt-in-view {
+    opacity:1;
+  }
+}
+
+.lmnt-watch-fade-in-4 {
+  opacity:0;
+  transition:all 5.5s ease;
+  &.lmnt-in-view {
+    opacity:1;
   }
 }

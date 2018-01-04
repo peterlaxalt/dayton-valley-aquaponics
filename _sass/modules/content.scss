@@ -2,6 +2,7 @@
 
 body {
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 // anchors
@@ -594,12 +595,16 @@ a.anchor {
     margin:0 auto;
   }
   h2 {
-    transform: skew(0deg, -9deg);
+    transform: scale(.6) skew(0deg, -3deg);
     display:inline-block;
     padding:$base/4 0;
     border-top: 24px solid $clr-orange;
     border-bottom: 24px solid $clr-orange;
     text-align:center;
+    transition:all 1s ease;
+    &.lmnt-in-view {
+      transform: scale(1) skew(0deg, -9deg);
+    }
     @media (max-width:1300px) {
       font-size:22vw;
     }

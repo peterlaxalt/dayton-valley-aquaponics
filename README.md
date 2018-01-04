@@ -12,14 +12,16 @@ by Peter Laxalt 2018 (laxaltandmciver.co) (peterlaxalt.dribbble.com)
 6. Navigate to [http://127.0.0.1:4000/](http://127.0.0.1:4000/) or [localhost:4000/](localhost:4000/)
 
 ## Fire up a .ngrok server
-* You can access your ```localhost:4000``` from any device because ```.ngrok``` is amazing. In terminal, simply type ```$ ./ngrok http 4000``` to fire up a server and they will provide urls.
+- You can access your ```localhost:4000``` from any device because ```.ngrok``` is amazing.
+- In the ```/_ngrok/``` folder you'll find a .zip file with .ngrok in it. Install that.
+- In terminal, simply type ```$ ./ngrok http 4000``` to fire up a server and they will provide urls.
 
 ## Deploy via Terminal
-* We're hosted up on Github pages, deploying off of the ```master``` branch.
-* To deploy, simply ```git add .``` your changes, leave a commit message as ```git commit -m "always improving"``` and then deploy by ```git push origin master```.
+- We're hosted up on Github pages, deploying off of the ```master``` branch.
+- To deploy, simply ```git add .``` your changes, leave a commit message as ```git commit -m "always improving"``` and then deploy by ```git push origin master```.
 
 ## Edit content & settings via Forestry.io
-* If you aren't too code savvy, we're also hooked up to Forestry.io. Log in to the CMS of the Dayton Valley Aquaponics site at ```/dva-admin/```. Any updates will be published after pressing ```publish```.
+- If you aren't too code savvy, we're also hooked up to Forestry.io. Log in to the CMS of the Dayton Valley Aquaponics site at ```/dva-admin/```. Any updates will be published after pressing ```publish```.
 
 
 

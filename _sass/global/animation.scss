@@ -77,3 +77,41 @@
 .marquee {
   animation: marquee 5s linear infinite;
 }
+
+// bounce
+
+@-webkit-keyframes bounce {
+  0% {
+    transform:  scale(.8);
+  }
+  25% {
+    transform:  scale(1);
+  }
+  50% {
+    transform:  scale(.6);
+  }
+  75% {
+    transform:  scale(1);
+  }
+  100% {
+    transform:  scale(.8);
+  }
+}
+
+@-webkit-keyframes bounce-center {
+  0% {
+    transform: translate(-50%,-50%) scale(.8);
+  }
+  25% {
+    transform: translate(-50%,-50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%,-50%) scale(.6);
+  }
+  75% {
+    transform: translate(-50%,-50%) scale(1);
+  }
+  100% {
+    transform: translate(-50%,-50%) scale(.8);
+  }
+}

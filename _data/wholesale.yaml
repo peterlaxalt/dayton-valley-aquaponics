@@ -1,0 +1,19 @@
+---
+stockists:
+- name: 'Great Basin Community Food Co-Op'
+  url: '#'
+  location: 'Reno, Nevada'
+  cover: 'https://source.unsplash.com/440x706/?tree,water'
+- name: 'Great Basin Community Food Co-Op'
+  url: '#'
+  location: 'Reno, Nevada'
+  cover: 'https://source.unsplash.com/440x706/?cows'
+- name: 'Great Basin Community Food Co-Op'
+  url: '#'
+  location: 'Reno, Nevada'
+  cover: 'https://source.unsplash.com/440x706/?beach'
+- name: 'Great Basin Community Food Co-Op'
+  url: '#'
+  location: 'Reno, Nevada'
+  cover: 'https://source.unsplash.com/440x706/?candles'
+---

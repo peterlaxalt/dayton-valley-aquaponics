@@ -2,8 +2,9 @@
 # covered stylesheet
 ---
 
-// reset
+// vendor
 @import 'vendor/normalize';
+@import 'vendor/slick';
 
 // global variables
 @import 'global/base';

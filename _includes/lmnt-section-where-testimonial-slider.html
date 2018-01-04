@@ -1,0 +1,24 @@
+<section class="lmnt-testimonial-wrap row-full-width row-relative">
+  <div class="lmnt-testimonial-slider">
+
+    {% for testimonial in site.data.testimonials %}
+      <div class="lmnt-testimonial-slide"  style="background-image:url('{{ testimonial.cover }}')">
+        <div class="lmnt-testimonial-slide-inner">
+          <span>
+            {{ testimonial.location }}
+          </span>
+          <p>
+            {{ testimonial.quote }}
+          </p>
+          <span>
+            {{ testimonial.name }}
+          </span>
+          <span>
+            {{ testimonial.company }}
+          </span>
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+</section>

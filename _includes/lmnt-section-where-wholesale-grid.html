@@ -1,0 +1,35 @@
+<section class="lmnt-wholesale-grid-wrapper row-full-width row-relative">
+
+  <div class="row-flex flex-align-center flex-center row-site-width flex-col">
+    <div class="lmnt-full">
+      <h3 class="txt-clr-aqua txt-center">
+        Find the Latest Crop
+      </h3>
+      <p class="txt-center">
+        Found in the local Reno-Tahoe-Carson area, our produce is sold direct to restaurants, caterers and grocers who value our craft.
+      </p>
+    </div>
+  </div>
+
+  <div class="lmnt-wholesale-grid">
+
+    {% for stockist in site.data.wholesale.stockists %}
+    <div class="lmnt-vendor-card">
+      <div class="lmnt-vendor-card-inner" style="background-image:url('{{ stockist.cover }}');">
+        <a href="{{ stockist.url }}" target="_blank">
+          <div class="lmnt-vendor-card-overlay">
+            <span>
+              {{ stockist.location }}
+            </span>
+            <h5>
+              {{ stockist.name }}
+            </h5>
+          </div>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+
+</section>

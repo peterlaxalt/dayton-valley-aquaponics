@@ -1,0 +1,17 @@
+---
+- name: 'Amber Sallisbery'
+  quote: 'Dayton Valley Aquaponics consistently delivers us the freshest tomatoes and herbs all year round.'
+  location: 'Reno, Nevada'
+  cover: 'https://source.unsplash.com/440x706/?tree,water'
+  company: 'Great Basin Community Food Co-Op'
+- name: 'Hulk Hogan'
+  quote: 'To all my little Hulkamaniacs, say your prayers, take your vitamins and you will never go wrong.'
+  location: 'Reno, Nevada'
+  cover: 'https://source.unsplash.com/440x706/?lightning'
+  company: 'Great Basin Community Food Co-Op'
+- name: 'Buruce Lee'
+  quote: 'Knowing is not enough, we must apply. Willing is not enough, we must do.'
+  location: 'Reno, Nevada'
+  cover: 'http://eskify.com/wp-content/uploads/2016/07/best-bruce-lee-movies_00003-1080x675.jpg'
+  company: 'Great Basin Community Food Co-Op'
+---

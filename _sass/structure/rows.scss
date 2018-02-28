@@ -1,16 +1,15 @@
 // rows.scss
+.row-full-width {
+  width:100%;
+  max-width:100%;
+  margin:0 auto;
+}
 
 .row-site-width {
   width:100%;
   max-width:$base-max-width;
   margin:0 auto;
   padding:$base/3;
-}
-
-.row-full-width {
-  width:100%;
-  max-width:100%;
-  margin:0 auto;
 }
 
 .row-relative {

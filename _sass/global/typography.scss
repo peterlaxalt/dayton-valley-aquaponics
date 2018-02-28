@@ -39,7 +39,7 @@ h2 {
   text-transform:uppercase;
   line-height:.9;
   @media (max-width:$base-sm) {
-    font-size:9vw;
+    font-size:8.25vw;
   }
 }
 
@@ -77,6 +77,9 @@ p {
   line-height:1.8;
 	font-family:$fnt-body;
   margin:0;
+  @media (max-width:$base-sm) {
+    font-size:5.7vw;
+  }
 }
 
 .txt-center {

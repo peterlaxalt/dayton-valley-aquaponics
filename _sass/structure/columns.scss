@@ -16,10 +16,16 @@ div[class^="lmnt-"], div[class*=" lmnt-"] {
 
 .lmnt-half {
   width:($lmnt-half)+unquote("%");
+  @media (max-width:$base-sm) {
+    width:100%;
+  }
 }
 
 .lmnt-third {
   width:($lmnt-third)+unquote("%");
+  @media (max-width:$base-sm) {
+    width:100%;
+  }
 }
 
 .lmnt-two-third {
@@ -32,30 +38,59 @@ div[class^="lmnt-"], div[class*=" lmnt-"] {
       height:60vw;
     }
   }
+  @media (max-width:$base-sm) {
+    width:100%;
+    &.lmnt-square {
+      height:auto;
+    }
+    .lmnt-full {
+      &.lmnt-square {
+        height:auto;
+      }
+    }
+  }
 }
 
 .lmnt-quarter {
   width:($lmnt-quarter)+unquote("%");
+  @media (max-width:$base-sm) {
+    width:100%;
+  }
 }
 
 .lmnt-three-quarter {
   width:($lmnt-quarter*3)+unquote("%");
+  @media (max-width:$base-sm) {
+    width:100%;
+  }
 }
 
 .lmnt-eighth {
   width:($lmnt-eighth)+unquote("%");
+  @media (max-width:$base-sm) {
+    width:100%;
+  }
 }
 
 .lmnt-three-eighth {
   width:($lmnt-eighth*3)+unquote("%");
+  @media (max-width:$base-sm) {
+    width:100%;
+  }
 }
 
 .lmnt-five-eighth {
   width:($lmnt-eighth*5)+unquote("%");
+  @media (max-width:$base-sm) {
+    width:100%;
+  }
 }
 
 .lmnt-seven-eighth {
   width:($lmnt-eighth*7)+unquote("%");
+  @media (max-width:$base-sm) {
+    width:100%;
+  }
 }
 
 // medium viewport override
@@ -158,6 +193,9 @@ div[class^="lmnt-"], div[class*=" lmnt-"] {
 
 .lmnt-sq-third {
   height:($lmnt-third)+unquote("vw");
+  @media (max-width:$base-sm) {
+    height:100vw;
+  }
 }
 
 .lmnt-sq-two-third {
@@ -167,6 +205,9 @@ div[class^="lmnt-"], div[class*=" lmnt-"] {
 .lmnt-sq-who-grid-fix {
   // sorry, mom
   height:($lmnt-third*1.78)+unquote("vw");
+  @media (max-width:$base-sm) {
+    height:auto;
+  }
 }
 
 .lmnt-sq-how-grid-fix {

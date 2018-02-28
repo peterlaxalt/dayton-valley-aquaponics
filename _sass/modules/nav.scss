@@ -9,6 +9,9 @@ nav {
   padding:$base/3;
   font-family:$fnt-header;
   z-index:800;
+  @media (max-width:$base-sm) {
+    padding:($base/4)/2;
+  }
   .lmnt-nav-inner {
     width:100%;
     max-width:$base-max-width;
@@ -41,6 +44,15 @@ nav {
         align-items:center;
         @media (max-width:$base-sm) {
           border-right:none;
+          a {
+            display:flex;
+            flex-wrap:nowrap;
+            flex-direction:row;
+            align-items:center;
+          }
+          .logotype {
+            width:110px;
+          }
         }
         img {
           &:first-child {

@@ -144,6 +144,9 @@ a.anchor {
 
 .lmnt-section-header {
   padding:$base*5 $base;
+  @media (max-width:$base-sm) {
+    padding:$base*3 $base/4;
+  }
   &:before, &:after {
     content:'';
     width:2px;
@@ -181,6 +184,9 @@ a.anchor {
   }
   .lmnt-typed-wrapper {
     height:130px;
+    @media (max-width:$base-sm) {
+      height:70px;
+    }
     .lmnt-community-typed {
       display:inline-block;
     }
@@ -296,6 +302,9 @@ a.anchor {
     }
     &.lmnt-grid-item-100h {
       height:100%;
+      @media (max-width:$base-sm) {
+        height:200vw !important;
+      }
     }
     .lmnt-grid-item-inner {
       padding:$base/2;
@@ -323,6 +332,9 @@ a.anchor {
         font-weight:900;
         margin:0;
         letter-spacing:0;
+        @media (max-width:$base-sm) {
+          font-size:17vw;
+        }
       }
       .lmnt-grid-item-embellish {
         font-size:18px;
@@ -345,19 +357,33 @@ a.anchor {
     height:30vw;
     &.lmnt-divide-border-left {
       padding-left:($base/4)/2;
+      @media (max-width:$base-sm) {
+        padding-left:0;
+      }
     }
     &.lmnt-divide-border-right-padding {
       padding-right:($base/4)/2;
+      @media (max-width:$base-sm) {
+        padding-right:0;
+      }
     }
   }
   .lmnt-two-third {
     &.lmnt-divide-border-right {
       padding-right:($base/4)/2;
       border-right:dotted $clr-aqua 4px;
+      @media (max-width:$base-sm) {
+        padding-right:0;
+        border-right:none;
+      }
     }
     &.lmnt-divide-border-left-dotted {
       padding-left:($base/4)/2;
       border-left:dotted $clr-aqua 4px;
+      @media (max-width:$base-sm) {
+        padding-left:0;
+        border-left:none;
+      }
     }
     .lmnt-half {
       height:33.33333333vw;
@@ -368,6 +394,28 @@ a.anchor {
       }
     }
   }
+  @media (max-width:$base-sm) {
+    .lmnt-third {
+      width:100%;
+      height:100vw;
+    }
+    .lmnt-half {
+      height:100vw !important;
+    }
+    .lmnt-two-third {
+      width:100%;
+    }
+    .lmnt-grid-item-inner {
+      padding-left:$base/4 !important;
+      padding-right:$base/4 !important;
+      h2 {
+        font-size:11vw;
+      }
+      h3 {
+        font-size:7vw !important;
+      }
+    }
+  }
 }
 
 // lmnt-who-poster
@@ -375,6 +423,9 @@ a.anchor {
 .lmnt-who-poster {
   background-color:$clr-plum;
   padding:$base/1.5;
+  @media (max-width:$base-sm) {
+    padding:$base $base/4;
+  }
   .lmnt-who-poster-inner {
     border:4px solid $clr-white;
     color:$clr-white;
@@ -385,6 +436,9 @@ a.anchor {
     .txt-caption {
       &:first-child {
         padding-bottom:$base*4;
+        @media (max-width:$base-sm) {
+          padding-bottom:$base;
+        }
       }
       &:last-child {
         padding-top:$base*4;
@@ -972,6 +1026,19 @@ a.anchor {
     text-align:center;
     a, a:hover, a:visited, a:active, a:focus {
       color:$clr-aqua;
+    }
+  }
+}
+
+// media overrides
+
+@media (max-width:$base-sm) {
+  .lmnt-meta-grid {
+    &.lmnt-grid-item {
+      height:auto !important;
+      .lmnt-info-item {
+        height:auto !important;
+      }
     }
   }
 }

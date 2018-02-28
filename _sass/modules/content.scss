@@ -329,6 +329,9 @@ a.anchor {
       // spacing
       &.lmnt-grid-item-spacing {
         padding:$base;
+        @media (max-width:$base-md) {
+          padding:$base $base/4 !important;
+        }
       }
       // text styles
       h2 {

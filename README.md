@@ -20,6 +20,7 @@ by Peter Laxalt 2018 (laxaltandmciver.co) (peterlaxalt.dribbble.com)
 - To deploy, simply ```git add .``` your changes, leave a commit message as ```git commit -m "always improving"``` and then deploy by ```git push origin master```.
 
 ## Deploy via FTP using Glynn (Production)
+- Go to config.yml and make sure the ```url:``` property is set to the correct domain. Comment/uncomment the line if needed.
 - Simply type ```glynn``` into terminal and it will deploy to the dvaquaponics.com server.
 - To update FTP info, check ```config.yml```
 

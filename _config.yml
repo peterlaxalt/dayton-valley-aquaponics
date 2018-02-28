@@ -2,8 +2,8 @@ title: Dayton Valley Aquaponics
 email: pete@laxaltandmciver.co
 description: ""
 baseurl: "" # the subpath of your site, e.g. /blog
-url: ""
-# url: "http://dvaquaponics.com"
+# url: ""
+url: "http://dvaquaponics.com"
 
 # Glynn FTP Deploy Settings
 ftp_host: 'dvaquaponics.com'

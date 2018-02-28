@@ -13,7 +13,7 @@
       <ul class="lmnt-nav-list">
         {% for link in site.data.nav.links %}
           {% assign nav-counter = nav-counter | plus: 1 %}
-          <a data-scroll href="{{ link.url }}">
+          <a data-scroll href="{{ link.url }}" class="lmnt-nav-link">
             <li>
               <span>
                 0{{ nav-counter }}
@@ -22,6 +22,17 @@
             </li>
           </a>
         {% endfor %}
+        <a data-scroll href="#contact" class="lmnt-nav-link lmnt-nav-link-contact">
+          <li>
+            <span>
+              HI
+            </span>
+            Contact
+          </li>
+        </a>
+        <div class="lmnt-nav-mobile-close">
+          Close Menu
+        </a>
       </ul>
     </div>
 
@@ -35,16 +46,16 @@
           Wholesale
         </div>
       </a>
-      <a href="#contact">
-        <div class="lmnt-nav-toolbox">
+      <div class="lmnt-nav-toolbox">
+        <a href="#contact">
           <img src="{{site.baseurl}}/assets/icons/ico-mail.svg" class="lmnt-nav-contact" />
-          <div class="lmnt-nav-hamburger">
-            <span class="lmnt-hamburger-bar"></span>
-            <span class="lmnt-hamburger-bar"></span>
-            <span class="lmnt-hamburger-bar"></span>
-          </div>
+        </a>
+        <div class="lmnt-nav-hamburger">
+          <span class="lmnt-hamburger-bar"></span>
+          <span class="lmnt-hamburger-bar"></span>
+          <span class="lmnt-hamburger-bar"></span>
         </div>
-      </a>
+      </div>
     </div>
 
   </div>

@@ -213,6 +213,9 @@ div[class^="lmnt-"], div[class*=" lmnt-"] {
 .lmnt-sq-how-grid-fix {
   // sorry, mom
   height:66.5vw;
+  @media (max-width:$base-sm) {
+    height:auto;
+  }
 }
 
 .lmnt-sq-quarter {

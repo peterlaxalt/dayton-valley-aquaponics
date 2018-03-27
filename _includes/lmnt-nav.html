@@ -15,18 +15,12 @@
           {% assign nav-counter = nav-counter | plus: 1 %}
           <a data-scroll href="{{ link.url }}" class="lmnt-nav-link">
             <li>
-              <span>
-                0{{ nav-counter }}
-              </span>
               {{ link.label }}
             </li>
           </a>
         {% endfor %}
         <a data-scroll href="#contact" class="lmnt-nav-link lmnt-nav-link-contact">
           <li>
-            <span>
-              HI
-            </span>
             Contact
           </li>
         </a>
@@ -47,7 +41,7 @@
         </div>
       </a>
       <div class="lmnt-nav-toolbox">
-        <a href="#contact">
+        <a href="mailto:{{ site.data.social.email }}">
           <img src="{{site.baseurl}}/assets/icons/ico-mail.svg" class="lmnt-nav-contact" />
         </a>
         <div class="lmnt-nav-hamburger">

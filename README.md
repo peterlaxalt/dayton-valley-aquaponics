@@ -12,8 +12,7 @@ by Peter Laxalt 2018 (laxaltandmciver.co) (peterlaxalt.dribbble.com)
 ## Fire up a .ngrok server (Testing)
 - You can access your ```localhost:4000``` from any device because ```.ngrok``` is amazing.
 - In the ```/_ngrok/``` folder you'll find a .zip file with .ngrok in it. Install that.
-- In terminal, simply type ```$ ./_ngrok/ngrok http 4000``` to fire up a server and they will provide urls.
-- Be sure that if you are on development and potentially behind a directory such as ```/dayton-valley-aquaponics/```, you'll have to append that to your .ngrok url.
+- In terminal, simply type ```$ ./_ngrok/ngrok http 4000``` to fire up a server and they will provide urls. - Be sure that if you are on development and potentially behind a directory such as ```/dayton-valley-aquaponics/```, you'll have to append that to your .ngrok url.
 
 ## Deploy via Github Pages (Development)
 - We're hosted up on Github pages, deploying off of the ```master``` branch for development purposes.

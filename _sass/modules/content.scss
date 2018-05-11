@@ -1193,3 +1193,96 @@ a.anchor {
     }
   }
 }
+
+//lmnt where table
+.lmnt-table-wrap {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+
+  .buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding-left: 5%;
+      padding-right: 5%;
+  }
+
+  .button {
+    font-family: $fnt-body;
+    font-weight: 900;
+    font-size: 19px;
+    text-transform: uppercase;
+    padding: 15px;
+    width: 200px;
+    border: 2px solid $clr-plum;
+    margin: 20px;
+    display: inline-block;
+    box-shadow: 6px 6px $clr-canvas, 8px 8px $clr-plum;
+  }
+
+  .lmnt-table-header{
+    color: $clr-aqua;
+    font-size: 18px;
+    font-family: $fnt-body;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 5px;
+
+  }
+  .lmnt-table-subtitle{
+    font-family: $fnt-body;
+    line-height: 1.5;
+    font-size: 14px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .lmnt-event-container {
+      display: flex;
+      flex-direction: row;
+      
+      margin: 0 auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+    .lmnt-event {
+      background-color: $clr-plum;
+      display: flex;
+      flex-direction: row;
+      font-family: $fnt-body;
+      font-weight: 400;
+
+          .lmnt-event-title{
+            padding: 20px;
+            color: $clr-orange;
+            font-family:$fnt-header;
+            font-size: 20px;
+            letter-spacing: 3px;
+            flex-grow: 1;
+          }
+            .lmnt-event-date{
+            color: $clr-aqua;
+
+          }
+          .lmnt-event-address{
+            color: $clr-white;
+            font-size: 10px;
+            text-transform: uppercase;
+            
+          }
+          .lmnt-event-info{
+            padding: 20px;
+            flex-grow: 1;
+          }
+
+      }
+
+    .lmnt-event-time{
+      background-color: $clr-dust;
+      color: $clr-plum;
+      width: 70px;
+      text-align: center;
+    }
+  }
+}

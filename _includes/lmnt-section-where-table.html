@@ -1,0 +1,41 @@
+<section class="lmnt-table-wrap row-full-width row-relative">
+
+   <div class="lmnt-table-header">
+     Find The Latest Crop
+    </div>
+    <div class="lmnt-table-subtitle">
+      Found in the local Reno-Tahoe-Carson area, our produce is sold direct to restaurants, caterers and grocers who value our craft.
+    </div>
+
+    <div class="buttons">
+      <div class="button">Saturday</div>
+      <div class="button">Thursday</div>
+      <div class="button">Tuesday</div>
+    </div>
+   
+  {% for event in site.data.events.events %}
+  <div class="lmnt-event-container">
+      <div class="lmnt-event">
+        <div class="lmnt-event-title">
+          {{event.name}}
+        </div>
+        <div class="lmnt-event-info">
+          <div class="lmnt-event-date">
+            {{event.date}}
+          </div>
+          <div class="lmnt-event-address">
+            {{event.address}}
+            •
+            {{event.city}}
+          </div>
+        </div>
+      </div>
+
+      <div class="lmnt-event-time">
+        {{event.time}}
+      </div>
+  </div>
+   {% endfor %}
+  
+</section>
+

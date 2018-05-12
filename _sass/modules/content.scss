@@ -1199,6 +1199,7 @@ a.anchor {
   margin: 0 auto;
   width: 60%;
   text-align: center;
+  margin-bottom: 160px;
 
   .buttons {
       display: flex;
@@ -1206,19 +1207,54 @@ a.anchor {
       justify-content: space-around;
       padding-left: 5%;
       padding-right: 5%;
+      @media (max-width:1050px){
+        flex-direction: column;
+        margin-top: 10px;
+      }
   }
 
-  .button {
-    font-family: $fnt-body;
-    font-weight: 900;
-    font-size: 19px;
-    text-transform: uppercase;
-    padding: 15px;
-    width: 200px;
-    border: 2px solid $clr-plum;
-    margin: 20px;
-    display: inline-block;
-    box-shadow: 6px 6px $clr-canvas, 8px 8px $clr-plum;
+  .lmnt-cta-button {
+    font-size: 18px;
+    line-height:1.2;
+    padding:$base/5 5%;
+    background-color:$clr-canvas;
+    border:3px solid $clr-plum;
+    color:$clr-plum;
+    text-transform:uppercase;
+    font-weight:900;
+    display:inline-block;
+    margin:$base/2 0;
+    position:relative;
+    transition:all .25s ease;
+    @media (max-width:1050px){
+      margin:$base/4 0;
+    }
+    @media (max-width:$base-sm) {
+      font-size:20px;
+      padding:$base/3 $base/4;
+      text-align:center;
+    }
+    .lmnt-cta-shadow {
+      position:absolute;
+      left:0;
+      right:0;
+      top:0;
+      bottom:0;
+      background-color:$clr-canvas;
+      border:3px solid $clr-plum;
+      transform:translate(8px,8px);
+      z-index:-1;
+      transition:all .25s ease;
+    }
+    &:hover {
+      background-color:$clr-aqua;
+      color:$clr-white;
+      .lmnt-cta-shadow {
+        background-color:$clr-plum;
+        border:3px solid $clr-plum;
+        transform:translate(10px,10px);
+      }
+    }
   }
 
   .lmnt-table-header{
@@ -1229,7 +1265,7 @@ a.anchor {
     text-transform: uppercase;
     letter-spacing: 5px;
     margin: 5px;
-
+    margin-top: 60px;
   }
   .lmnt-table-subtitle{
     font-family: $fnt-body;
@@ -1241,10 +1277,12 @@ a.anchor {
   .lmnt-event-container {
       display: flex;
       flex-direction: row;
-      
       margin: 0 auto;
       margin-top: 10px;
       margin-bottom: 10px;
+      @media (max-width:650px){
+        flex-direction: column;
+      }
 
     .lmnt-event {
       background-color: $clr-plum;
@@ -1252,37 +1290,84 @@ a.anchor {
       flex-direction: row;
       font-family: $fnt-body;
       font-weight: 400;
+      flex-grow: 1;
+      align-items: center;
+      @media (max-width:650px){
+        flex-direction: column;
+        align-items: left;
+      }
 
           .lmnt-event-title{
-            padding: 20px;
+            padding: 20px 0px 20px 20px;
             color: $clr-orange;
             font-family:$fnt-header;
             font-size: 20px;
             letter-spacing: 3px;
-            flex-grow: 1;
+            flex: 0 0 330px;
+            text-align: left;
+            @media (max-width:1050px){
+              flex: 0 0 300px;
+            }
+            @media (max-width:850px){
+              flex: 0 0 200px;
+            }
+            @media (max-width:650px){
+              flex: 1;
+              padding-bottom: 0px;
+              }
+
           }
             .lmnt-event-date{
             color: $clr-aqua;
-
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-bottom: 7px;
           }
           .lmnt-event-address{
             color: $clr-white;
             font-size: 10px;
             text-transform: uppercase;
-            
+            letter-spacing: 2px;
           }
           .lmnt-event-info{
+
             padding: 20px;
-            flex-grow: 1;
+            text-align: left;
           }
 
       }
 
     .lmnt-event-time{
+      font-family: $fnt-body;
       background-color: $clr-dust;
       color: $clr-plum;
-      width: 70px;
+      flex: 0 0 100px;
       text-align: center;
+      text-transform: uppercase;
+      font-weight: 500;
+      @media (max-width:650px){
+        flex: 1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        }
+
+      .lmnt-event-time-inner {
+        @media (min-width:650px){
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        }
+
+        .time-part {
+          @media (min-width:650px){
+          display: block;
+          }
+        }
+     
+        .hyphen{
+          margin: -3px;
+        }
+      }
     }
   }
 }

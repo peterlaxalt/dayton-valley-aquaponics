@@ -8,9 +8,9 @@
     </div>
 
     <div class="buttons">
-      <div class="button">Saturday</div>
-      <div class="button">Thursday</div>
-      <div class="button">Tuesday</div>
+      <div class="lmnt-cta-button">Saturday<span class="lmnt-cta-shadow"></span></div>
+      <div class="lmnt-cta-button">Thursday<span class="lmnt-cta-shadow"></span></div>
+      <div class="lmnt-cta-button">Tuesday<span class="lmnt-cta-shadow"></span></div>
     </div>
    
   {% for event in site.data.events.events %}
@@ -25,17 +25,24 @@
           </div>
           <div class="lmnt-event-address">
             {{event.address}}
-            •
+            -
             {{event.city}}
           </div>
         </div>
       </div>
 
       <div class="lmnt-event-time">
-        {{event.time}}
+          <div class="lmnt-event-time-inner">
+              <span class="time-part">{{event.starttime}}</span>
+              <span class="hyphen time-part">-</span>
+              <span class="time-part">{{event.endtime}}</span>
+          </div>
       </div>
   </div>
    {% endfor %}
   
 </section>
+{% comment %}
+//box-shadow: 8px 8px 0px -2px $clr-canvas, 8px 8px 0 $clr-plum;
+{% endcomment %}
 

@@ -1255,6 +1255,15 @@ a.anchor {
         transform:translate(10px,10px);
       }
     }
+    &.clicked {
+      background-color:$clr-aqua;
+      color:$clr-white;
+      .lmnt-cta-shadow {
+        background-color:$clr-plum;
+        border:3px solid $clr-plum;
+        transform:translate(10px,10px);
+      }
+    }
   }
 
   .lmnt-table-header{
@@ -1370,4 +1379,8 @@ a.anchor {
       }
     }
   }
+}
+
+.hide-class {
+  display: none !important;
 }

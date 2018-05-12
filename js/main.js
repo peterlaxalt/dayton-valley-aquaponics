@@ -19,4 +19,32 @@ $(document).ready(function() {
     };
   });
 
+  $('.lmnt-cta-button').click(function() {
+    if ($(this).hasClass('clicked')) {
+      //do nothing
+    }
+    else {
+      if ($('.lmnt-cta-button').hasClass('clicked')) {
+        $('.lmnt-cta-button').removeClass('clicked');
+        $(this).addClass('clicked');
+        removeEvents( $(this) );
+      }
+    }
+  });
+
+removeEvents( $('.clicked') );
+
 });
+
+function removeEvents ( buttonDiv ){
+  allEvents = document.getElementsByClassName("lmnt-event-container");
+  var index = allEvents.length;
+
+  for (var i = 0; i < index; i++){
+    var div = allEvents[i];
+    div.classList.remove('hide-class');
+    
+    if ( allEvents[i].id != buttonDiv.text())
+      div.classList.add('hide-class');
+    }
+}

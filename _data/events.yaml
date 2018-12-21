@@ -1,6 +1,6 @@
 ---
 events:
-- name: 'The Village Farmers Market'
+- name: 'Village Farmers Market'
   day: 'Saturday'
   address: '1119 California Ave'
   city: 'Reno, NV'
